@@ -131,7 +131,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "TrscT"
+#define CUSTOM_MACHINE_NAME "TsrcT"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -735,7 +735,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 406.3 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 405.6 }
 
 /**
  * Default Max Feed Rate (mm/s)
