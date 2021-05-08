@@ -510,10 +510,10 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    // E3D v6 clone at 170°
-    #define DEFAULT_Kp 24.938
-    #define DEFAULT_Ki 1.123
-    #define DEFAULT_Kd 138.406
+    // E3D v6 clone at 180°
+    #define DEFAULT_Kp 22.10
+    #define DEFAULT_Ki 1.62
+    #define DEFAULT_Kd 75.21
   #endif
 #endif // PIDTEMP
 
@@ -1048,7 +1048,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -37.5, 1.0, -0.98 }
+#define NOZZLE_TO_PROBE_OFFSET { -38, 2.0, -1.8 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1431,14 +1431,14 @@
   /**
    * Enable the G26 Mesh Validation Pattern tool.
    */
-  //#define G26_MESH_VALIDATION
+  #define G26_MESH_VALIDATION
   #if ENABLED(G26_MESH_VALIDATION)
     #define MESH_TEST_NOZZLE_SIZE    0.4  // (mm) Diameter of primary nozzle.
     #define MESH_TEST_LAYER_HEIGHT   0.2  // (mm) Default layer height for G26.
-    #define MESH_TEST_HOTEND_TEMP  205    // (°C) Default nozzle temperature for G26.
-    #define MESH_TEST_BED_TEMP      60    // (°C) Default bed temperature for G26.
-    #define G26_XY_FEEDRATE         20    // (mm/s) Feedrate for G26 XY moves.
-    #define G26_XY_FEEDRATE_TRAVEL 100    // (mm/s) Feedrate for G26 XY travel moves.
+    #define MESH_TEST_HOTEND_TEMP    200  // (°C) Default nozzle temperature for G26.
+    #define MESH_TEST_BED_TEMP        50  // (°C) Default bed temperature for G26.
+    #define G26_XY_FEEDRATE           20  // (mm/s) Feedrate for G26 XY moves.
+    #define G26_XY_FEEDRATE_TRAVEL   100  // (mm/s) Feedrate for G26 XY travel moves.
     #define G26_RETRACT_MULTIPLIER   1.0  // G26 Q (retraction) used by default between mesh test elements.
   #endif
 
