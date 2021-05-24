@@ -557,10 +557,10 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  // Anycubic Ultrabase @ 60°
-  #define DEFAULT_bedKi 0.933
-  #define DEFAULT_bedKp 74.013
-  #define DEFAULT_bedKd 1468.227
+  // M303 E-1 C5 S60
+  #define DEFAULT_bedKi 32.2537
+  #define DEFAULT_bedKp 211.6328
+  #define DEFAULT_bedKd 925.7524
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
