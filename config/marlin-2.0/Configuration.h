@@ -602,9 +602,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // E3D v5 clone at 180°
-    #define DEFAULT_Kp 22.10
-    #define DEFAULT_Ki 1.62
-    #define DEFAULT_Kd 75.21
+    #define DEFAULT_Kp 21.9091
+    #define DEFAULT_Ki 1.4749
+    #define DEFAULT_Kd 81.3651
   #endif
 #endif // PIDTEMP
 
@@ -1179,7 +1179,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -38, 2.0, -1.55 }
+#define NOZZLE_TO_PROBE_OFFSET { -35.0, 0.0, -2.80 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
